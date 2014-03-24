@@ -1,4 +1,5 @@
 import Resolver from 'ember/resolver';
+import microdataInitializer from 'appkit/initializers/microdata';
 import Store from 'appkit/microdata/store';
 
 var App = Ember.Application.extend({
@@ -10,5 +11,7 @@ var App = Ember.Application.extend({
   modulePrefix: 'appkit', // TODO: loaded via config
   Resolver: Resolver
 });
+
+App.initializer(microdataInitializer);
 
 export default App;
