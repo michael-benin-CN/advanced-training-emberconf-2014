@@ -14,5 +14,6 @@
 /connect.lock
 /libpeerconnection.log
 .DS_Store
+.idea
 Thumbs.db
 /coverage/*
